@@ -1,0 +1,16 @@
+.card {
+  overflow: hidden; 
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+.card-character:hover img {
+  scale: 1.1;
+ }
+
+.gradient-overlay {
+   background: linear-gradient(10.32deg, $gradient-color -0.99%, $gradient-color-74 31.85%, $gradient-color-0 86.04%);
+}

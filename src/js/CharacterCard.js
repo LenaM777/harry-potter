@@ -3,7 +3,7 @@ export function createCharacterCard(character) {
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card card-character bg-dark text-white rounded-4 border-0 glow h-100">
             <img src="${character.image || '/public/assets/images/emblem.jpg'}" class="card-img" alt="Character">
-            <div class="card-img-overlay d-flex align-items-end p-4">
+            <div class="card-img-overlay d-flex align-items-end p-4 gradient-overlay">
                 <div>
                     <h3 class="card-title">${character.name}</h3>
                     <p class="card-text text-warning mb-1"> ${character.house || 'Hogwarts'}</p>
