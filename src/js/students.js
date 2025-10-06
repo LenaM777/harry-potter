@@ -1,5 +1,13 @@
 import { createCharacterCard } from './CharacterCard.js';
+import { showCharacterModal } from './characterModal.js';
 
+async function loadModal() {
+  const res = await fetch('../components/CharacterModal.html');
+  const html = await res.text();
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
+await loadModal();
 
 const container = document.getElementById('studentsContainer');
 
@@ -23,6 +31,12 @@ function renderStudents(students) {
     container.innerHTML += createCharacterCard(student);
   });
 
+  document.querySelectorAll('.show-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const data = JSON.parse(btn.getAttribute('data-character'));
+      showCharacterModal(data);
+    });
+  });
 
 }
 
