@@ -1,9 +1,11 @@
 @import './utils/variables';   
-@import './utils/texts';      
+@import './utils/texts';   
+@import './utils/animations';    
 
 
 @import './base';
 
+@import './components/buttons';
 @import './components/card'; 
 
 @import './layouts/hero-section';  

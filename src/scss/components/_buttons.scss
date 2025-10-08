@@ -1,0 +1,9 @@
+.btn .arrow {
+  font-size: 1.4rem; 
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .arrow {
+  animation: pulse-arrow 0.6s infinite alternate;
+}
