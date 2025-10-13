@@ -9,6 +9,10 @@
 }
 
 .btn-group .btn {
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
   transition: background-color 0.3s, color 0.3s;
+}
+
+.btn {
+  font-size: clamp(1rem, 0.7vw, 1rem);
 }

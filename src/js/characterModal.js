@@ -23,7 +23,9 @@ export function showCharacterModal(character) {
           parts.push(`${formattedSubKey}: ${formattedValue}`);
         }
       }
-      value = `<span class="text-warning">${parts.join(', ')}</span>`;
+      value = parts.length > 0
+    ? `<span class="text-warning">${parts.join(', ')}</span>`
+    : `<span class="text-warning">Unknown</span>`;
     }
 
     else if (Array.isArray(value)) {
