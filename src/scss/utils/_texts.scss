@@ -1,9 +1,10 @@
 .big-text {
   font-weight: normal;              
-  font-size: clamp(40px, 12vw, 180px); 
+  font-size: clamp(50px, 12vw, 180px); 
 }
 
 .text-metal {
   font-family: $font-metal;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
+
